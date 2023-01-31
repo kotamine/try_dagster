@@ -1,0 +1,14 @@
+locations:
+  - location_name: machine-learning
+    image: myregistry/dagster-machine-learning:mytag
+    code_source:
+      package_name: dagster_cloud_machine_learning
+    executable_path: /my/folder/python_executable
+    attribute: my_repo
+  - location_name: data-eng
+    image: myregistry/dagster-data-eng:myothertag
+    code_source:
+      python_file: repo.py
+    working_directory: https://github.com/kotamine/try_dagster
+    
+    
